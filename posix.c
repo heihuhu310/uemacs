@@ -26,10 +26,10 @@
 
 /* Since Mac OS X's termios.h doesn't have the following 2 macros, define them.
  */
-#if defined(SYSV) && (defined(_DARWIN_C_SOURCE) || defined(_FREEBSD_C_SOURCE))
+//#if defined(SYSV) && (defined(_DARWIN_C_SOURCE) || defined(_FREEBSD_C_SOURCE))
 #define OLCUC 0000002
 #define XCASE 0000004
-#endif
+//#endif
 
 static int kbdflgs;			/* saved keyboard fd flags      */
 static int kbdpoll;			/* in O_NDELAY mode             */
@@ -67,7 +67,7 @@ void ttopen(void)
 	/* No signal handling, no echo etc */
 	ntermios.c_lflag &= ~(ISIG | ICANON | XCASE | ECHO | ECHOE | ECHOK
 			      | ECHONL | NOFLSH | TOSTOP | ECHOCTL |
-			      ECHOPRT | ECHOKE | FLUSHO | PENDIN | IEXTEN);
+			      ECHOKE | FLUSHO | IEXTEN);
 
 	/* one character, no timeout */
 	ntermios.c_cc[VMIN] = 1;

@@ -108,13 +108,13 @@
 
 #else
 
-#define	VT220	(UNIX | VMS)
+#define	VT220	1
 #define	VT100	0
 
 #define	ANSI	0
 #define	VMSVT	VMS
 #define	VT52	0
-#define	TERMCAP	UNIX
+#define	TERMCAP	1
 #define	IBMPC	MSDOS
 
 #endif /* Autoconf. */

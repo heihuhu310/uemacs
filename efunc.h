@@ -336,7 +336,7 @@ extern char *getkill(void);
 extern int setvar(int f, int n);
 extern void findvar(char *var, struct variable_description *vd, int size);
 extern int svar(struct variable_description *var, char *value);
-extern char *itoa(int i);
+extern char *eitoa(int i);
 extern int gettyp(char *token);
 extern char *getval(char *token, char *result, int size);
 extern int stol(char *val);

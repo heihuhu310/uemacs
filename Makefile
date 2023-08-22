@@ -12,7 +12,8 @@ else
 endif
 export E Q
 
-uname_S := $(shell sh -c 'uname -s 2>/dev/null || echo not')
+#uname_S := $(shell sh -c 'uname -s 2>/dev/null || echo not')
+uname_S := Linux
 
 PROGRAM=em
 
@@ -34,7 +35,7 @@ HDR=ebind.h edef.h efunc.h epath.h estruct.h evar.h util.h version.h
 
 CC=gcc
 WARNINGS=-Wall -Wstrict-prototypes
-CFLAGS=-O2 $(WARNINGS) -g
+CFLAGS=-O2 $(WARNINGS) -g -std=c99
 #CC=c89 +O3			# HP
 #CFLAGS= -D_HPUX_SOURCE -DSYSV
 #CFLAGS=-O4 -DSVR4		# Sun
