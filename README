@@ -1,3 +1,12 @@
+Why fork?
+
+There is no worked version uEmacs/Pk 4.0 can be download from Internet, 
+and the orignal code can't build sucessful too, so this repo made some
+modifies to build the em.exe basically successful.
+
+Known issues:
+Only can run in Cygwin bash window, either DOS or Git bash or Msys2 can not now. 
+
 +---------------+
 | uEmacs/PK 4.0 |
 +---------------+
